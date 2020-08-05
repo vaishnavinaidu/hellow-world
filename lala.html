@@ -7,6 +7,10 @@
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
  <style>
+  div.static {
+  position: static;
+  border: 3px solid #73AD21;
+}
   table, td, th {
   border: 1px solid black;
   background-color: #000000;
@@ -52,7 +56,7 @@ td {
 }
   .right {
   position: absolute;
-  right: 20px;
+  right: 70px;
   width: 300px;
   border: 3px solid #73AD21;
   padding: 10px;
@@ -103,6 +107,9 @@ td {
 </style>
 </head>
 <body>
+ <div class="static">
+    <a href="#"><img src="bulb" class="image-circle" alt="bulb" width="20%"></a>;
+</div>
   
 <div id="example1">
   <i class="material-icons">cloud</i>
@@ -245,6 +252,9 @@ td {
         <li>Dictation kills classroom time, and conceptual discussion is non-existent these days.</li>
         <li>Teacher share their notes at LectureNotes teach freely in the classroom and discuss in the concept.</li>
         <li>Students can access the notes from different teachers, compare them and refer to the one that suits their requirement.</li>
+        <li><button type="button" class="btn btn-primary">upload</button></li>
+        <li><button type="button" class="btn btn-warning">Read Now</button></li>
+      
     </ul></div>
       <iframe width="540" height="304" src="https://www.youtube.com/embed/SVkXUGj4t_8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
  </div>  
