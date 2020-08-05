@@ -7,6 +7,22 @@
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
  <style>
+  table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #000000}
+
+th {
+  background-color: #000000;
+  color: white;
+}
  p.ridge {border-style: ridge;}
  a:link, a:visited {
   background-color: #FFFFFF;
@@ -235,25 +251,28 @@
      <div class="container"><button type="button" class="btn btn-warning">download</button></div>
      <img src="mobile.png" class="img-rounded" alt="mobile" width="304" height="236">
   </div>
-   
-  <div>
-    
-       
-          <ul>
-            <li><a href="default.asp">About us</a></li>
-            <li><a href="default.asp">Contact us</a></li>
-            <li><a href="default.asp">Returns and Cancellation</a></li>
-            <li><a href="default.asp">For Faculty</a></li>
-            <li><a href="default.asp">FAQ</a></li>
-            <li><a href="default.asp">Careers</a></li>
-            <li><a href="default.asp">Disclaimer</a></li>
-            <li><a href="default.asp">Terms of use</a></li>
-            <li><a href="default.asp">Copyright policy</a></li>
-            <li><a href="default.asp">Report an error</a></li>
-            <li><a href="default.asp">Privacy Policy</a></li>
-            <li><a href="default.asp">Advertise with us</a></li>
-            <li><a href="default.asp">Campus Ambassador</a></li>
-          </ul>
-  </div>
+   <table>
+    <tr>
+       <th><a href="default.asp">About us</a></th>
+       <th><a href="default.asp">Contact us</a></th>
+       <th><a href="default.asp">Returns and cancellation</a></th>
+    </tr>
+    <tr>
+       <td><a href="default.asp">For faculty us</a></td>
+       <td><a href="default.asp">FAQ</a></td>
+       <td><a href="default.asp">Careers</a></td>
+    </tr>
+    <tr>
+       <td><a href="default.asp">Disclaimer</a></td>
+       <td><a href="default.asp">Terms of Use</a></td>
+       <td><a href="default.asp">Copyright Policy</a></td>
+    </tr>
+    <tr>
+       <td><a href="default.asp">Report an error</a></td>
+       <td><a href="default.asp">Privacy Policy</a></td>
+       <td><a href="default.asp">Advertise with us</a></td>
+    </tr>
+    <tr><td><a href="default.asp">Campus Ambassador</a></td></tr>
+  </table>
   </body>
 </html>
