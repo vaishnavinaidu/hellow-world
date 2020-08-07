@@ -1,0 +1,365 @@
+<html>
+ <head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ <style>
+  div.static {
+  position: static;
+  border: 3px solid #73AD21;
+}
+ table,td,th{
+  background-color:#000000;
+  border: 1px solid #000000;
+  text-align: left; }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  height: 50px;
+  vertical-align: bottom;
+}
+ p.ridge {border-style: ridge;}
+ a:link, a:visited {
+  background-color: #FFFFFF;
+  background-size:5px 4px;
+  color: black;
+  padding: 4px 7px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #000000;
+  }
+  .center {
+  line-height: 200px;
+  height: 200px;
+  text-align: center;
+}
+   
+.div3 {
+  float: left;
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  border: 3px solid #73AD21;
+}
+
+.div4 {
+  border: 1px solid red;
+  clear: right;
+}
+  .right {
+  position: absolute;
+  right: 70px;
+  width: 300px;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+ 
+  a:link {
+            color: blue;
+        }
+  a:visited {
+           color: green;
+            }
+
+ h1 {
+       text-align: center;
+    }
+ body {
+    background-image: linear-gradient(to left, rgba(0,0,255,0), rgba(0,0,255,0));
+   }
+ 
+#example1 {
+  background-image: url(kew.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 4000px 7000px;
+  padding: 15px;
+}  
+  #example2 {
+  background-image: url(liteblue.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 3000px 2300px;
+  padding: 15px;}
+ #example3 {
+  background-image: url(white.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 4000px 7000px;
+  padding: 15px;
+  }   
+   #example4 {
+  background-image: url(darkblue.jpg);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 8000px 5000px;
+  padding: 15px;
+  }   
+  p.impact{ font-style: italic; 
+</style>
+</head>
+<body>
+ <div id="example1">
+  <i class="material-icons">cloud</i>
+  <i class="material-icons">favorite</i>
+  <i class="material-icons">attachment</i>
+  <i class="material-icons">computer</i>
+ <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">LectureNotes</a>
+    </div>
+
+      <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Upload</a></li>
+       <li><a href="#">Explore</a></li>
+      <li><a href="#">Internships New</a></li>
+      <li><a href="#">LCA New</a></li>
+      <li><a href="#">Prime New</a></li>
+     </ul>
+  
+    <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search" name="search">
+      </div>
+     <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+   <ul class="nav navbar-nav navbar-right">
+       <li><a href="#"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+       <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+  </div>
+</nav>
+ <div class="container">
+  <form action="/action_page.php">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search" name="search">
+      <div class="input-group-btn">
+        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+      </div>
+    </div>
+  </form>
+</div>
+  <center><h1><p class="impact"><strong><p style="color: white">GET THE BEST</p><p style="color: orange">LECTURE NOTES</p></strong></p></h1>
+  </center>
+  <div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+     <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+     </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="vtu.png" alt="jntus" style="width:20%;">
+      </div>
+
+      <div class="item">
+        <img src="klu.png" alt="KLU" style="width:20%;">
+      </div>
+    
+      <div class="item">
+        <img src="kiit.png" alt="KIIT" style="width:20%;">
+      </div>
+      
+      <div class="item">
+        <img src="bput.png" alt="BPUT" style="width:20%;">
+      </div>
+      
+     <div class="item">
+        <img src="anna.png" alt="ANNA" style="width:20%;">
+      </div>
+     <div class="item">
+        <img src="amity.png" alt="AMITY" style="width:20%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+             <h3 style="color:white"><strong>Engineering courses</strong></h3>
+                <ul>   
+                  <li><a href="#">Electronics and Communication Engineering</a></li>
+                  <li><a href="#">Computer Science Engineering</a></li>
+                  <li><a href="#">Mechanical Engineering</a></li>
+                  <li><a href="#">CIVIL Engineering</a></li>
+                  <li><a href="#">Electrical and electronics Engineering</a></li>
+                  <li><a href="#">Electronics and Instrumentation Engineering</a></li>
+                </ul>
+ <div id="example2">       
+  <center><h2>WHAT WE OFFER</h2></center>
+      <div class="container" style="width: 100%">
+         <div class="row" align="center">
+             <div class="col-md-3">
+                      <a href="default.asp"><img src= "notes.png" class="image-rounded" alt ="notes"></a>
+             </div>
+             <div class="col-md-3">        
+                       <a href="default.asp"><img src= "video.png" class="image-rounded" alt ="video"></a>
+             </div>  
+             <div class="col-md-3">     
+                        <a href="default.asp"><img src= "exam.png" class="image-rounded" alt ="exam"></a>
+             </div>
+             <div class="col-md-3">
+                        <a href="default.asp"><img src= "placement_preparation.png" class="image-rounded" alt ="placement"></a>
+             </div>
+          </div>
+         </div>
+      </div>  
+  </div>
+            
+           
+ <section>          
+ <div id="example3">
+   <center><h2>How LectureNotes Help</h2></center>
+  
+    <div class="right">
+     <ul>
+        <li>Dictation kills classroom time, and conceptual discussion is non-existent these days.</li>
+        <li>Teacher share their notes at LectureNotes teach freely in the classroom and discuss in the concept.</li>
+        <li>Students can access the notes from different teachers, compare them and refer to the one that suits their requirement.</li>
+        <li><a href="https://lecturenotes.in/upload">upload</a></li>
+        <li><a href="https://lecturenotes.in/course">Read Now</a></li>
+      
+    </ul></div>
+      <iframe width="540" height="304" src="https://www.youtube.com/embed/SVkXUGj4t_8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ </div>  
+  </section>
+     
+   <center><div id="example4">
+   <strong><h2 style="color:white">Download Our Android App</h2></strong>
+       <p style="color:white"> Keep your favourite notes in your pocket and access it whenever you need, even without internet.</p>
+         
+     <div class="container"><button type="button" class="btn btn-warning">download</button></div>
+     <img src="mobile.png" class="img-rounded" alt="mobile" width="304" height="236">
+  </div></center>
+ <div>
+  <center><h2>What they say<h2></center>
+  <div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="mana.jpg" alt="mana" style="width:30%;">
+        <div class="carousel-caption">
+          <h3>Prof. Sunil S Harakannanavar,
+               S. G. Balekundri Institute of Technology, Belagavi</h3>
+          <p>Both the faculties and young research-minded students save a lot of their valuable time for discussing the novel concepts in their respective fields without the dictation of notes in the classroom. It’s a very good platform for both students and faculties to share their innovative ideas and knowledge. Also, the platform helps the faculties to complete their syllabus within the stipulated time. So, I will encourage the faculties to upload quality based notes to share their knowledge among young minds in their respective fields.
+
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="manb.jpg" alt="Chicago" style="width:30%;">
+        <div class="carousel-caption">
+          <h3>
+             Tarini Charan Mishra,
+             Silicon Institute of Technology</h3>
+          <p>Dictation takes a huge amount of time which can rather be used to discuss concepts in the classroom. It is very good for students and faculties and I would encourage all the faculties to upload their notes on LectureNotes so that they can spend more time explaining the concepts and students get notes from the website.
+
+          </p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="manc.jpg" alt="New York" style="width:30%;">
+        <div class="carousel-caption">
+          <h3 style="color:">
+               Prof. A. K. Nayak,
+               KIIT University, Bhubaneswar</h3>
+          <p>LectureNotes has helped us increase classroom interaction with the students. It has not only helped me in completing the syllabus on time but also to get recognition among the faculties and students.
+
+         </p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+ </div>
+   <table>
+    <tr>
+       <th><a href="#">About us</a></th>
+       <th><a href="#">Contact us</a></th>
+       <th><a href="#">Returns and cancellation</a></th>
+       <th><a href="https://apps.apple.com/us/app/lecturenotes-learner/id1482508043?ls=1"><img src="appstore.png" alt="apple"></a></th>
+    </tr>
+    <tr>
+       <td><a href="#">For faculty us</a></td>
+       <td><a href="#">FAQ</a></td>
+       <td><a href="#">Careers</a></td>
+       <td><a href="https://play.google.com/store/apps/details?id=in.lecturenotes.lecturenotes"><img src="googleplay.png" alt="playstore"></a></td>
+    </tr>
+    <tr>
+       <td><a href="#">Disclaimer</a></td>
+       <td><a href="#">Terms of Use</a></td>
+       <td><a href="#">Copyright Policy</a></td>
+       <td><a href="support@lecturenotes.in">support@lecturenotes.in</a></td>
+    </tr>
+    <tr>
+       <td><a href="#">Report an error</a></td>
+       <td><a href="#">Privacy Policy</a></td>
+       <td><a href="#">Advertise with us</a></td>
+       <td> <div class="container" style="width: 30%">
+         <div class="row" align="center">
+             <div class="col-md-3">
+                      <a href="https://facebook.com/lecturenotes.in"><img src= "fb.png" class="image-circle" alt ="notes" width="30" height="20"></a>
+             </div>
+             <div class="col-md-3">        
+                       <a href="https://twitter.com/Lecturenotesin"><img src= "twitter.png" class="image-circle" alt ="twitter" width="30" height="20"></a>
+             </div>  
+             <div class="col-md-3">     
+                        <a href="https://www.linkedin.com/company/lecturenotes-in"><img src= "in.png" class="image-circle" alt ="linkedin" width="30" height="20"></a>
+             </div>
+             <div class="col-md-3">
+                        <a href="https://in.pinterest.com/lecturenotes/"><img src= "pint.jpg" class="image-circle" alt ="pinterest" width="30" height="20"></a>
+             </div>
+          </div>
+         </div> </td>
+    </tr>
+    <tr><td><a href="#">Campus Ambassador</a></td></tr>
+  </table>
+
+  </body>
+</html>
