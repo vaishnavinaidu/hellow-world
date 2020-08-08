@@ -8,6 +8,14 @@
        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
        <link href="https://fonts.google.com/specimen/Acme">
     <style>
+      @media (min-width: 1200px){
+        .jumbotron{
+          background: url:('buvk.jpg')no-repeat;
+          height:657px;
+          box-shadow: 0 0 50px #3F0C1F;
+          border: 2px solid #3F0C1F;
+        }
+      }
       body{
         font-size: 16px;
         color: #fff;
@@ -76,20 +84,23 @@
                   <a href="#">
                     <span class="glyphicon glyphicon-list-alt"></span><br class="hidden-xs">Articles</a>
                 </li>
-                <div id="call-btn" class="visible-xs">
-                  <a class="btn" href=tel:+919927468766">
-                    <span class="glyphicon glyphicon-earphone"></span>+919927468766</a></div>
-                <div id="xs-deliver" class="text-center visible-xs">CONTACT Us</div>
-                <div id="main-content" class="container">
-                   <div class="jumbotron">
-                      <img src="learn.jpg" alt="bg" class="img-responsive visible-xs"
-                   </div>
-                </div>
+                <li id="phone" class="hidden-xs">
+                  <a href="tel:+919927468766">
+                    <span>+919927468766</span></a><div>CONTACT US</div></li>
             
               </ul>
             </div>
          </div>
       </nav>
     </header>
+                <div id="call-btn" class="visible-xs">
+                              <a class="btn" href=tel:+919927468766">
+                                <span class="glyphicon glyphicon-earphone"></span>+919927468766</a></div>
+                            <div id="xs-deliver" class="text-center visible-xs">CONTACT Us</div>
+                            <div id="main-content" class="container">
+                               <div class="jumbotron">
+                                  <img src="learn.jpg" alt="bg" class="img-responsive visible-xs"
+                               </div>
+                            </div>
   </body>
 </html>
