@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<title> Notes Pickup</title>
+	<title> Notes Pickup</title>
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Yellowtail&display=swap" rel="stylesheet">
@@ -9,500 +9,345 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/6878103c17.js" crossorigin="anonymous"></script>
-	 <meta charset="utf-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1">
-       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-       <link rel="stylesheet" href="css/bootstrap.min.css">
-       <link rel="stylesheet" href="css/styles.css">
-       <link href="https://fopnts.googleapis.com/css?family=Oxygen:400,300,700" rel='stylesheet' type='text/css'>
-
-       <link href="https://fonts.google.com/specimen/Acme">
-
-    
-
 	<style>
-				*{
-		margin:0;
-		padding: 0;
-		scroll-behavior: smooth;
-		}
-
-		#firefly{
-			height: 100vh;
-			width: 100%;
-		}
-
-		.ul{
-
-			float: left;
-			margin-top: 30px;
-			margin-left: 20px;
-			font-weight: lighter;
-		}
-
-		.ul li{
-			display: inline-block;
-			margin-left: 80px; 
-		}
-
-		.ul li a{
-
-			text-decoration: none;
-			letter-spacing: 2px;
-			color: #fff;
-			font-size: 20px;
-			font-weight: bolder;
-			position: relative;
-			padding-bottom: 4px;
-
-		}
-
-		.ul li a:hover{
-			color: #ff8400;
-			transition: 0.9s;
-		}
-
-		.ul li a:after{
-			content: '';
-			position: absolute;
-			left: 50%;
-			bottom: 0;
-			transform: translateX(-50%) scaleX(0);
-			transform-origin: 50% 50%;
-			width: 100%;
-			height: 2px;
-			background-color: rgba(255,255,255,0.9);
-			transition: transform 250ms;
-		}
-
-		.ul li a:hover:after{
-			transform: translateX(-50%) scaleX(1);
-		}
-
-
-		.ul2{
-
-			float: right;
-			margin-top: 30px;
-		    margin-right: 20px;
-		    font-weight: lighter;
-		}
-		.ul2 li{
-
-			display: inline-block;
-			margin-right: 100px; 
-		}
-
-		.ul2 li a{
-
-			text-decoration: none;
-			letter-spacing: 2px;
-			color: #fff;
-			font-size: 20px;
-			font-weight: bolder;
-			position: relative;
-			padding-bottom: 4px;
-		}
-
-
-
-		.ul2 li a:hover{
-			color: #ff8400;
-			transition: 0.9s;
-		}
-
-		.ul2 li a:after{
-			content: '';
-			position: absolute;
-			left: 50%;
-			bottom: 0;
-			transform: translateX(-50%) scaleX(0);
-			transform-origin: 50% 50%;
-			width: 100%;
-			height: 2px;
-			background-color: rgba(255,255,255,0.9);
-			transition: transform 250ms;
-		}
-
-		.ul2 li a:hover:after{
-			transform: translateX(-50%) scaleX(1);
-		}
-
-		#home{
-			height: 100vh;
-			width: 100%;
-			background-image:  linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../img/bgop.jpg');
-			background-repeat: no-repeat;
-			background-size: cover;
-			background-attachment: fixed;
-		}
+		*{
+margin:0;
+padding: 0;
+scroll-behavior: smooth;
+}
+
+#firefly{
+	height: 100vh;
+	width: 100%;
+}
+
+.ul{
+
+	float: left;
+	margin-top: 30px;
+	margin-left: 20px;
+	font-weight: lighter;
+}
+
+.ul li{
+	display: inline-block;
+	margin-left: 80px; 
+}
+
+.ul li a{
+
+	text-decoration: none;
+	letter-spacing: 2px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bolder;
+	position: relative;
+	padding-bottom: 4px;
+
+}
+
+.ul li a:hover{
+	color: #ff8400;
+	transition: 0.9s;
+}
+
+.ul li a:after{
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%) scaleX(0);
+	transform-origin: 50% 50%;
+	width: 100%;
+	height: 2px;
+	background-color: rgba(255,255,255,0.9);
+	transition: transform 250ms;
+}
+
+.ul li a:hover:after{
+	transform: translateX(-50%) scaleX(1);
+}
+
+
+.ul2{
+
+	float: right;
+	margin-top: 30px;
+    margin-right: 20px;
+    font-weight: lighter;
+}
+.ul2 li{
+
+	display: inline-block;
+	margin-right: 100px; 
+}
+
+.ul2 li a{
+
+	text-decoration: none;
+	letter-spacing: 2px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bolder;
+	position: relative;
+	padding-bottom: 4px;
+}
 
-		h1{
-			color: #f1f1f1;
-			margin-top: 26%;
-			position: absolute;
-			font-size: 70px;
-			margin-left: 30%;
-			font-family: 'Rye', cursive;
-			/*font-family: 'Pacifico', cursive;*/
-			font-weight: lighter;
-		}
 
-		.welcome{
-			color: #fff;
-			margin-top: 20%;
-			position: absolute;
-			font-size: 50px;
-			margin-left: 32%;
-			font-family: 'Great Vibes', cursive;
-			font-weight: lighter;
 
+.ul2 li a:hover{
+	color: #ff8400;
+	transition: 0.9s;
+}
 
+.ul2 li a:after{
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%) scaleX(0);
+	transform-origin: 50% 50%;
+	width: 100%;
+	height: 2px;
+	background-color: rgba(255,255,255,0.9);
+	transition: transform 250ms;
+}
 
-		}
-		.navbar-brand{
-        padding-top:25px; 
-        }
-        .navbar-brand h1{
-	      color: #fff;
-			margin-top: 20%;
-			position: absolute;
-			font-size: 50px;
-			margin-left: 32%;
-			font-family: 'Great Vibes', cursive;
-			font-weight: lighter;
-	        
-	      }
-	      .navbar-brand a:hover, .navbar-brand a:focus{
-	        text-decoration: none;
-	      }
+.ul2 li a:hover:after{
+	transform: translateX(-50%) scaleX(1);
+}
 
-	      #nav-list{
-        margin-top:10px;
-	      }
-	      #nav-list a{
-	        color:#951C49;
-	        text-align: center;
-	      }
-	      #nav-list a:hover{
-	        background:#E7E7E7
-	      }
-	      #nav-list a span{
-	        font-size: 1.8em;
-	      }
+#home{
+	height: 100vh;
+	width: 100%;
+	background-image:  linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../img/bgop.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
 
-		.hm{
-			color: #ff4948;
-		}
+h1{
+	color: #f1f1f1;
+	margin-top: 26%;
+	position: absolute;
+	font-size: 70px;
+	margin-left: 30%;
+	font-family: 'Rye', cursive;
+	/*font-family: 'Pacifico', cursive;*/
+	font-weight: lighter;
+}
 
-		p{
-			color: #fff;
-			margin-top: 24%;
-			position: absolute;
-			font-size: 20px;
-			margin-left: 5%; 
-		}
+.welcome{
+	color: #fff;
+	margin-top: 20%;
+	position: absolute;
+	font-size: 50px;
+	margin-left: 32%;
+	font-family: 'Great Vibes', cursive;
+	font-weight: lighter;
 
-		.logo{
-			position: absolute;
-			top: 0px;
-			left: 41%;
-		}
 
-		.logo img{
-			height: 100px; 
-			width: auto;
 
-		}
-
-
-
-
-
-		/*-------------------------*/
-
+}
 
-
-
-
-
-
-
-		/*--------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-		/*-------------------------*/
-		#footer{
-		  height: 100vh;
-		  width: 100%;
-		/*  background-image: url('../img/offerbg.jpg');
-		  background-size: cover;*/
-		  background-color: #111;
-		}
-
-
-		.ftxt{
-		  color: #fff;
-		  position: absolute;
-		  margin-top: 170px;
-		  margin-left: 100px;
-		  font-size: 35px;
-		  font-weight: bold;
-		}
-
-		.fp{
-		  color: #a9a9a9;
-		  margin-top: 250px;
-		  position: absolute;
-		  margin-left: 100px;
-		}
-
-		.contxt{
-		  color: #fff;
-		  position: absolute;
-		  margin-top: 170px;
-		  margin-left: 700px;
-		  font-size: 35px;
-		  font-weight: bold;
-		}
-
-
-		.cp{
-		  color: #a9a9a9;
-		  margin-top: 250px;
-		  position: absolute;
-		  margin-left: 700px;
-		}
-
-		.stxt{
-		  color: #fff;
-		  position: absolute;
-		  margin-top: 170px;
-		  margin-left: 1100px;
-		  font-size: 35px;
-		  font-weight: bold;
-		}
-
-
-		.sp{
-		  color: #fff;
-		  margin-top: 250px;
-		  position: absolute;
-		  margin-left: 1100px;
-		  font-size: 20px;
-		}
-
-		span{
-		  margin-left: 20px;
-		  color: #a9a9a9;
-		}
-
-		.sp i{
-		  font-size: 30px;
-		}
-
-		.sp2{
-		  color: #fff;
-		  margin-top: 310px;
-		  position: absolute;
-		  margin-left: 1100px;
-		  font-size: 20px;
-		}
-		.sp2 i{
-		  font-size: 30px;
-		}
-
-
-		.sp3{
-		  color: #fff;
-		  margin-top: 370px;
-		  position: absolute;
-		  margin-left: 1100px;
-		  font-size: 20px;
-		}
-
-		.sp3:hover{
-		  color: red;
-		}
-
-
-		.sp2:hover{
-		  color: blue;
-		}
-
-		.sp:hover{
-		  color: #4cd0e0;
-		}
-
-		.sp3 i{
-		  font-size: 30px;
-		}
-
-		.rights{
-		  position: absolute;
-		  color: #fff;
-		  font-size: 20px;
-		  margin-left: 500px;
-		  margin-top: 580px;
-		}
-
-		.line{
-		  position: absolute;
-		  width: 90%;
-		  height: 1px;
-		  background-color: #a9a9a9;
-		  margin-top: 550px;
-		  left: 60px;
-		}
-	    .navbar-header button.navbar-toggle, .navbar-header .icon-bar{
-        border:1px solid #ffffff;
-        }
-        .navbar-header button.navbar-toggle{
-        clear:both;
-        margin-top:-30px;
-        }
-        @media (min-width: 1200px){
-        .jumbotron{
-          background:url(glenn-carstens-peters-0iB6_GX7BXk-unsplash.jpg)no-repeat;
-          height:675px;
-          box-shadow: 0 0 50px #3F0C1F;
-          border:2px solid #3F0C1F;
-        }
-        }
-        @media(min-width: 992px) and (max-width: 1199px){
-      
-       .jumbotron{
-          background:url(glenn-carstens-peters-0iB6_GX7BXk-unsplash.jpg)no-repeat;
-          height:558px;
-          box-shadow: 0 0 50px #3F0C1F;
-          border:2px solid #3F0C1F;
-        }
-        }
-        @media(min-width: 768px) and (max-width:991px ){
-         .jumbotron{
-          background:url(glenn-carstens-peters-0iB6_GX7BXk-unsplash.jpg)no-repeat;
-          height:432px;
-          box-shadow: 0 0 50px #3F0C1F;
-          border:2px solid #3F0C1F;
-         }
-        }
-        @media(max-width: 767px){
-         .navbar-brand {
-          padding-top: 10px;
-          height: 80px;
-         }
-         .navbar-brand h1{ 
-           padding-top: 10px;
-           font-size: 5vw;
-         }
-         .navbar-brand p{
-          font-size:.6em;
-          margin-top: 12px;
-          }
-          .navbar-brand p img{
-            height:20px;
-          }
-          #collapse-nav a{
-            font-size:1.2em;
-          }
-          #collapse-nav a span{
-            font-size: 1em;
-            margin-right: 5px;
-          }
-         #call-btn > a{
-              font-size: 1.5em;
-              display:block;
-              margin: 0 20px;
-              padding: 10px;
-              border:2px solid #fff;
-              background-color: #f6b319;
-              color:#951c49;
-
-            }
-          #xs-deliver{
-            margin-top: 5px;
-            font-size: .7em;
-            letter-spacing: .1em;
-            text-transform: uppercase;
-          }
-          .container .jumbotron{
-            margin-top: 30px;
-            padding:0;
-            box-shadow: 0 0 50px #3F0C1F;
-            border:2px solid #3F0C1F;
-          }
-      }
-      #header-nav{
-        background-color:#000000;
-        border-radius:0;
-        border:0;
-        opacity: 70;
-      }
-
-	</style>
-	</head>
-
-  <body>
-  	<script src="js/jquery-2.1.4.min.js"></script>
-  	<script src="js/bootstrap.min.js"></script>
-  	<script src="js/script.js"></script>
-	
-    <header>
-    <section id="home">
-    	<nav id="header-nav" class="navbar navbar-default">
-		
-			<div class="container">
-               <div class="navbar-header">
-               	<div class="navbar-brand">
-               	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-		              <span class="sr-only">Toggle navigation</span>
-		              <span class="icon-bar"></span>
-		              <span class="icon-bar"></span>
-		              <span class="icon-bar"></span>
-		              <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-		           </button></div>
-		           <div id="collapsable-nav" class="collapse navbar-collapse">
-
-							<ul id=nav-list class="ul nav navbar-nav navbar-right">
-
-								<li><a href="#"><span class="glyphicon glyphicon-list-alt"></span><br class="hidden-xs">Articles</a></li>
-								<li><a href="#"><span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs">About</a></li>
-								<li><a href="#"><span class="glyphicon glyphicon-user"></span><br class="hidden-xs">Services</a></li>				
-							
-							</ul>
-
-							<div class="logo">
-								<img src="img/logo.png" class="img-responsive visible-xs">
-							</div>
-								
-
-							<ul class="ul2 nav navbar-nav navbar-left">
-								<li><a href="#"><span class="glyphicon glyphicon-pencil"></span><br class="hidden-xs">Feedback</a></li>
-								<li><a href="#"><span class="glyphicon glyphicon-earphone"></span><br class="hidden-xs">Contact</a></li>
-								<li><a href="#"><span class="glyphicon glyphicon-question-sign"></span><br class="hidden-xs">FAQ's</a></li>
-
-							</ul>
-					</div>
-                  </div>
-          </div>        
+.hm{
+	color: #ff4948;
+}
 
+p{
+	color: #fff;
+	margin-top: 24%;
+	position: absolute;
+	font-size: 20px;
+	margin-left: 5%; 
+}
+
+.logo{
+	position: absolute;
+	top: 0px;
+	left: 41%;
+}
+
+.logo img{
+	height: 100px; 
+	width: auto;
+
+}
+
+
+
+
+
+/*-------------------------*/
+
+
+
+
+
+
+
+
+/*--------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/*-------------------------*/
+#footer{
+  height: 100vh;
+  width: 100%;
+/*  background-image: url('../img/offerbg.jpg');
+  background-size: cover;*/
+  background-color: #111;
+}
+
+
+.ftxt{
+  color: #fff;
+  position: absolute;
+  margin-top: 170px;
+  margin-left: 100px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.fp{
+  color: #a9a9a9;
+  margin-top: 250px;
+  position: absolute;
+  margin-left: 100px;
+}
+
+.contxt{
+  color: #fff;
+  position: absolute;
+  margin-top: 170px;
+  margin-left: 700px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+
+.cp{
+  color: #a9a9a9;
+  margin-top: 250px;
+  position: absolute;
+  margin-left: 700px;
+}
+
+.stxt{
+  color: #fff;
+  position: absolute;
+  margin-top: 170px;
+  margin-left: 1100px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+
+.sp{
+  color: #fff;
+  margin-top: 250px;
+  position: absolute;
+  margin-left: 1100px;
+  font-size: 20px;
+}
+
+span{
+  margin-left: 20px;
+  color: #a9a9a9;
+}
+
+.sp i{
+  font-size: 30px;
+}
+
+.sp2{
+  color: #fff;
+  margin-top: 310px;
+  position: absolute;
+  margin-left: 1100px;
+  font-size: 20px;
+}
+.sp2 i{
+  font-size: 30px;
+}
+
+
+.sp3{
+  color: #fff;
+  margin-top: 370px;
+  position: absolute;
+  margin-left: 1100px;
+  font-size: 20px;
+}
+
+.sp3:hover{
+  color: red;
+}
+
+
+.sp2:hover{
+  color: blue;
+}
+
+.sp:hover{
+  color: #4cd0e0;
+}
+
+.sp3 i{
+  font-size: 30px;
+}
+
+.rights{
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  margin-left: 500px;
+  margin-top: 580px;
+}
+
+.line{
+  position: absolute;
+  width: 90%;
+  height: 1px;
+  background-color: #a9a9a9;
+  margin-top: 550px;
+  left: 60px;
+}
+	</style>>
+</head>
+<body>
+	<section id="home">
+
+		<nav class="nav">
+
+			<ul class="ul">
+
+				<li><a href="#home">Articles</a></li>
+				<li><a href="#aboutus">About</a></li>
+				<li><a href="#menu">Services</a></li>				
+			
+			</ul>
+
+			<div class="logo">
+				<img src="img/logo.png">
+			</div>
+				
+
+			<ul class="ul2">
+				<li><a href="#speciality">Feedback</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li><a href="#contact">FAQ's</a></li>
+
+			</ul>
 		</nav>
-  </section>
-</header>
-
 
 		<div class="content">
 
