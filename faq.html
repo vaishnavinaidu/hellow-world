@@ -262,34 +262,186 @@ html {
       margin-top: 550px;
       left: 60px;
     }
+    .hm{
+      color: #ff4948;
+    }
+
+    p{
+      color: #fff;
+      margin-top: 24%;
+      position: absolute;
+      font-size: 20px;
+      margin-left: 5%; 
+    }
+
+    .logo{
+      position: absolute;
+      top: 0px;
+      left: 41%;
+    }
+
+    .logo img{
+      height: 100px; 
+      width: auto;
+
+    }
+        .ul{
+
+      float: left;
+      margin-top: 30px;
+      margin-left: 20px;
+      font-weight: lighter;
+    }
+
+    .ul li{
+      display: inline-block;
+      margin-left: 80px; 
+    }
+
+    .ul li a{
+
+      text-decoration: none;
+      letter-spacing: 2px;
+      color: #fff;
+      font-size: 20px;
+      font-weight: bolder;
+      position: relative;
+      padding-bottom: 4px;
+
+    }
+
+    .ul li a:hover{
+      color: #ff8400;
+      transition: 0.9s;
+    }
+
+    .ul li a:after{
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%) scaleX(0);
+      transform-origin: 50% 50%;
+      width: 100%;
+      height: 2px;
+      background-color: rgba(255,255,255,0.9);
+      transition: transform 250ms;
+    }
+
+    .ul li a:hover:after{
+      transform: translateX(-50%) scaleX(1);
+    }
+
+
+    .ul2{
+
+      float: right;
+      margin-top: 30px;
+        margin-right: 20px;
+        font-weight: lighter;
+    }
+    .ul2 li{
+
+      display: inline-block;
+      margin-right: 100px; 
+    }
+
+    .ul2 li a{
+
+      text-decoration: none;
+      letter-spacing: 2px;
+      color: #fff;
+      font-size: 20px;
+      font-weight: bolder;
+      position: relative;
+      padding-bottom: 4px;
+    }
+
+
+
+    .ul2 li a:hover{
+      color: #ff8400;
+      transition: 0.9s;
+    }
+
+    .ul2 li a:after{
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%) scaleX(0);
+      transform-origin: 50% 50%;
+      width: 100%;
+      height: 2px;
+      background-color: rgba(255,255,255,0.9);
+      transition: transform 250ms;
+    }
+
+    .ul2 li a:hover:after{
+      transform: translateX(-50%) scaleX(1);
+    }
+
+    #home{
+      height: 100vh;
+      width: 100%;
+      background-image:  linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../img/bgop.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    h1{
+      color: #f1f1f1;
+      margin-top: 26%;
+      position: absolute;
+      font-size: 70px;
+      margin-left: 30%;
+      font-family: 'Rye', cursive;
+      /*font-family: 'Pacifico', cursive;*/
+      font-weight: lighter;
+    }
+
+    .welcome{
+      color: #fff;
+      margin-top: 20%;
+      position: absolute;
+      font-size: 50px;
+      margin-left: 32%;
+      font-family: 'Great Vibes', cursive;
+      font-weight: lighter;
+
+
+
+    }
 
 </style>
 <body>
 
-<div class="container">
-  <h2 class="city">Notes Pickup/FAQ</h2>
-  <ul class="nav nav-tabs">
-      <a class="nav-tabs" href="#">
-     <img src="logoss.png" alt="logo" style="width:150px;">
-   </a>
-    <li class="nav-item">
-      <a class="nav-link active" href="#">FAQ</a>
-    </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Explore</a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Notes</a>
-        <a class="dropdown-item" href="#">Videos</a>
-        <a class="dropdown-item" href="#">Questions</a>
-        <a class="dropdown-item" href="#">Practice Papers</a>
-        <a class="dropdown-item" href="#">Previous Papers</a>
-        </div>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Features</a>
-    </li>
-   
-  </ul>
+<section id="home">
+
+    <nav class="nav">
+
+      <ul class="ul">
+
+        <li><a href="#home">Articles</a></li>
+        <li><a href="#aboutus">About</a></li>
+        <li><a href="#menu">Services</a></li>       
+      
+      </ul>
+
+      <div class="logo">
+        <img src="img/logo.png">
+      </div>
+        
+
+      <ul class="ul2">
+        <li><a href="#speciality">Feedback</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact">FAQ's</a></li>
+
+      </ul>
+    </nav>
+  
   <div class="container">
   <form action="/action_page.php">
     <div class="input-group">
@@ -379,4 +531,3 @@ html {
 
 </body>
 </html>
-
