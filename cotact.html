@@ -8,29 +8,173 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  
+       <link rel="stylesheet" href="css/bootstrap.min.css">
+       <link rel="stylesheet" href="css/styles.css">
+       <link href="https://fopnts.googleapis.com/css?family=Oxygen:400,300,700" rel='stylesheet' type='text/css'>
+
+       <link href="https://fonts.google.com/specimen/Acme">
+       <style>
+         #firefly{
+      height: 100vh;
+      width: 100%;
+    }
+
+    .ul{
+
+      float: left;
+      margin-top: 30px;
+      margin-left: 20px;
+      font-weight: lighter;
+    }
+
+    .ul li{
+      display: inline-block;
+      margin-left: 80px; 
+    }
+
+    .ul li a{
+
+      text-decoration: none;
+      letter-spacing: 2px;
+      color: #fff;
+      font-size: 20px;
+      font-weight: bolder;
+      position: relative;
+      padding-bottom: 4px;
+
+    }
+
+    .ul li a:hover{
+      color: #ff8400;
+      transition: 0.9s;
+    }
+
+    .ul li a:after{
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%) scaleX(0);
+      transform-origin: 50% 50%;
+      width: 100%;
+      height: 2px;
+      background-color: rgba(255,255,255,0.9);
+      transition: transform 250ms;
+    }
+
+    .ul li a:hover:after{
+      transform: translateX(-50%) scaleX(1);
+    }
+
+
+    .ul2{
+
+      float: right;
+      margin-top: 30px;
+        margin-right: 20px;
+        font-weight: lighter;
+    }
+    .ul2 li{
+
+      display: inline-block;
+      margin-right: 100px; 
+    }
+
+    .ul2 li a{
+
+      text-decoration: none;
+      letter-spacing: 2px;
+      color: #fff;
+      font-size: 20px;
+      font-weight: bolder;
+      position: relative;
+      padding-bottom: 4px;
+    }
+
+
+
+    .ul2 li a:hover{
+      color: #ff8400;
+      transition: 0.9s;
+    }
+
+    .ul2 li a:after{
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%) scaleX(0);
+      transform-origin: 50% 50%;
+      width: 100%;
+      height: 2px;
+      background-color: rgba(255,255,255,0.9);
+      transition: transform 250ms;
+    }
+
+    .ul2 li a:hover:after{
+      transform: translateX(-50%) scaleX(1);
+    }
+
+         
+       </style>
+    
 </head>
 <body>
 
+   <nav class="nav">
+
+      <ul class="ul">
+       <li><a href="#aboutus">About</a></li>
+       <li><a href="#menu">Services</a></li>       
+      
+      </ul>
+
+      <div class="logo">
+        <img src="logoss.png">
+      </div>
+        
+
+      <ul class="ul2">
+        <li><a href="#speciality">Feedback</a></li>
+        <li><a href="#contact">FAQ</a></li>
+        
+      </ul>
+    </nav>
+ <div>
+   <div class="container">
+    <h1>We'd Love to Hear from You</h1>
+    <p>Our Teams are here to get in touch with you and help.</p>
+   </div>
+
+
+
+ </div>
 <div class="container">
-  <h2>Form Validation</h2>
-  <p>In this example, we use <code>.needs-validation</code>, which will add the validation effect AFTER the form has been submitting (if there's anything missing).</p>
-  <p>Try to submit this form before filling out the input fields, to see the effect.</p>
+  <h2>Leave us a line here</h2>
   <form action="/action_page.php" class="needs-validation" novalidate>
     <div class="form-group">
-      <label for="uname">Username:</label>
+      <label for="uname">Fullname:</label>
       <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
       <div class="valid-feedback">Valid.</div>
       <div class="invalid-feedback">Please fill out this field.</div>
     </div>
     <div class="form-group">
-      <label for="pwd">Password:</label>
+      <label for="pwd">Email-id</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Your Message</label>
       <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
       <div class="valid-feedback">Valid.</div>
       <div class="invalid-feedback">Please fill out this field.</div>
     </div>
     <div class="form-group form-check">
       <label class="form-check-label">
-        <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
+        <input class="form-check-input" type="checkbox" name="remember" required>I agree
         <div class="valid-feedback">Valid.</div>
         <div class="invalid-feedback">Check this checkbox to continue.</div>
       </label>
@@ -62,3 +206,4 @@
 
 </body>
 </html>
+
