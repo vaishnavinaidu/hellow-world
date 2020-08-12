@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style> 
+element.style {
+}
+.d-flex {
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+.icon-paper-plane:before {
+    content: "\f1d8";
+}
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+.subscribe form .btn {
+    border-radius: 30px;
+    background: #000;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-color: #000;
+}
+.btn {
+    border-radius: 30px;
+    background: #000;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-color: #000;
+    color: #fff;
+}
+.btn {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: .2rem;
+    font-family: "Cabin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: button;
+}
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button {
+    border-radius: 0;
+}
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+button {
+    appearance: button;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(buttontext, rgb(170, 170, 170));
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(74, 74, 74));
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(195, 195, 195));
+    border-image: initial;
+}
+@media (min-width: 768px)
+.container {
+    max-width: 720px;
+}
+@media (min-width: 576px)
+.container {
+    max-width: 540px;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+
+.trend-entry .number {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50px;
+    flex: 0 0 50px;
+    font-size: 30px;
+    line-height: 1;
+    color: #ccc;
+    margin-bottom:5px;
+}
+.align-self-start {
+    -ms-flex-item-align: start!important;
+    align-self: flex-start!important;
+}
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+</style>
+<body>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>All Articles</h1>
+     
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <a href="single5.html"><img src="c.jpg" width="150" height="150" style="float: left; margin-right:5px;"></a>
+      <div class="contents">
+        <h3><a href="single5.html"><p>Learn Topics within no time</p></a></h3>
+        <div class="post-meta">
+          <span class="d-block"><a href="#"><p style="font-size:15px">shruthi govil</p></span></a></span>
+          <span class="date-read">jul 19<sup>th</sup><span class="mx-1">.</span>4 min read<span class="iconstar2">...</span></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <a href="single5.html"><img src="d.jpg" width="150" height="150" style="float: left; margin-right:5px;"></a>
+      <div class="contents">
+        <h3><a href="single6.html"><p>7 Tips To Make Your Notes More Unique Than Others</p></a></h3>
+        <div class="post-meta">
+          <span class="d-block"><a href="#"><p style="font-size:15px">shruthi govil</p></span></a></span>
+          <span class="date-read">jul 18<sup>th</sup><span class="mx-1">.</span>4 min read<span class="iconstar2">...</span></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <a href="single5.html"><img src="e.jpg" width="150" height="150" style="float: left; margin-right:5px;"></a>
+      <div class="contents">
+        <h3><a href="single4.html"><p>7 Study Tips to Retain Information in Less Time!</p></a></h3>
+        <div class="post-meta">
+          <span class="d-block"><a href="#"><p style="font-size:15px">Diksha Mitra</p></span></a></span>
+          <span class="date-read">jul 20<sup>th</sup><span class="mx-1">.</span>4 min read<span class="iconstar2">...</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="section-title">
+        <h3>
+          Trending
+        </h3>
+      </div>
+      <div class="trend-entry d-flex">
+        <div class="number align-self-start">01</div>
+         <div class="trend-contents">
+          <h3><a href="single7.html"><p>21 ways to keep up with your notes</p></a></h3>
+          <div class="post-meta">
+          <span class="d-block"><a href="#"><p style="font-size:15px">Sameer Hussain</p></span></a></span>
+          <span class="date-read">jul 24<sup>th</sup><span class="mx-1">.</span>3 min read<span class="iconstar2">...</span></span>
+        </div>
+        <div class="trend-entry d-flex">
+        <div class="number align-self-start">02</div>
+         <div class="trend-contents">
+          <h3><a href="single13.html"><p>Effective ways to Cram up for an exam!</p></a></h3>
+          <div class="post-meta">
+          <span class="d-block"><a href="#"><p style="font-size:15px">Tanmay tiwari</p></span></a></span>
+          <span class="date-read">jul 25<sup>th</sup><span class="mx-1">.</span>3 min read<span class="iconstar2">...</span></span>
+        </div>
+        <div class="trend-entry d-flex">
+        <div class="number align-self-start">03</div>
+         <div class="trend-contents">
+          <h3><a href="single1.html"><p>Evils Of Corruption</p></a></h3>
+          <div class="post-meta">
+          <span class="d-block"><a href="#"><p style="font-size:15px">shruthi govil</p></span></a></span>
+          <span class="date-read">jul 23<sup>rd</sup><span class="mx-1">.</span>4 min read<span class="iconstar2">...</span></span>
+        </div>
+        <div class="trend-entry d-flex">
+        <div class="number align-self-start">04</div>
+         <div class="trend-contents">
+          <h3><a href="single3.html"><p>Things you should learn to do in class!</p></a></h3>
+          <div class="post-meta">
+          <span class="d-block"><a href="#"><p style="font-size:15px">Diksha Mitra</p></span></a></span>
+          <span class="date-read">jul 21<sup>st</sup><span class="mx-1">.</span>3 min read<span class="iconstar2">...</span></span>
+        </div>
+      
+  </div>
+
+</div>
+<div class="container">
+  <H2><a href="https://notespickup.com/article/meran/categories.html">SEE ALL ARTICLES</a></H2>
+</div>
+<div class="site-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="section-title">
+          <h2>
+            Political News
+          </h2>
+        </div>
+<div class="poetry-entry-2 d-flex">
+  <div class="contents">
+    <h4>
+      <a href="#">1. Guilty of Ignoring PV Narasimha Rao, Cong's Plan for Celebrating His Legacy is Beyond Tributes</a>
+    </h4>
+    <p class="mb-3">
+      Congress top leader has decided to pay tributes to former PM PV Narasimha Rao. The tribute is a belated acknowledgment to the man the Congress party was guilty of ignoring.</p>
+    </div>
+  </div>
+  <div class="poetry-entry-2 d-flex">
+  <div class="contents">
+    <h4>
+      <a href="#">2. Day After MGR's Statue Found Draped With Saffron in Puducherry, AIADMK Demands Action</a>
+    </h4>
+    <p class="mb-3">
+     A statue of former Tamil Nadu Chief Minister M G Ramachandran was found draped with a saffron shawl at Puducherry leading to protest by AIADMK and Chief Minister V Narayanasamy on 24 July which assured members of the territorial assembly that quick action would be taken against the culprits.</p>
+    </div>
+  </div>
+  <div class="poetry-entry-2 d-flex">
+  <div class="contents">
+    <h4>
+      <a href="#">3. Will Use Subhash Chandra Bose's 'Democratic Weapon' on Defectors: MP Congress</a>
+    </h4>
+    <p class="mb-3">
+     On 23RD July, the Congress saw its 25th MLA leave to join the BJP, a process that started with the resignation of 22 legislators loyal to Congress-man-turned BJP Rajya Sabha MP Jyotiraditya Scindia in March, which brought about the fall of the Kamal Nath government. The state unit of the Congress on Friday said it would use the "democratic weapon"of freedom icon Subhash Chandra Bose to corner the turncoats.</p>
+    </div>
+  </div>
+</div>
+      <div class="col-lg-6">
+        <div class="section-title">
+          <h2>
+            Buissiness News
+          </h2>
+        </div>
+    <div class="poetry-entry-2 d-flex">
+       <div class="contents">
+          <h4>
+            <a href="#">1. India Best Destination for Foreign Investment with High Returns, Gadkari Tells EU Investors</a>
+          </h4>
+          <p class="mb-3">
+           Union Minister Nitin Gadkari has urged European investors to invest in India. He also said that the government is promoting clean fuel and working towards running long-distance buses and trucks on LNG</p>
+          </div>
+        </div>
+        <div class="poetry-entry-2 d-flex">
+        <div class="contents">
+          <h4>
+            <a href="#">2. US-China Trade War: India Sees Bright Future for Gems and Jewellery Exports</a>
+          </h4>
+          <p class="mb-3">
+      Gems and Jewellery Export Promotion Council (GJEPC)officials said with China imposing the national security law on Hong Kong, the USA has given indication of raising duty on goods from there to 7.5 per cent from 3.3 per cent..</p>
+          </div>
+        </div>
+        <div class="poetry-entry-2 d-flex">
+        <div class="contents">
+          <h4>
+            <a href="#">3. Airtel and Vodafone Idea Lose Over 9 Million Subscribers; Jio Adds 1.57 Million Customers in April</a>
+          </h4>
+          <p class="mb-3">
+           Bharti Airtel and Vodafone Idea operators lost 5.26 million and 4.51 million subscribers respectively in April, while Reliance Jio added 1.57 million users during the same period, according to latest Trai data..</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="site-section subscribe bg-lite">
+  <div class="container">
+    <form action="#" class="row align-items-center">
+      <div class="col-md-5 mr-auto">
+        <h2>Newsletter Subscribe</h2>
+      </div>
+      <div class="col-md-6 ml-auto">
+      <div class="d-flex">
+        <input type="email" class="form-control" placeholder="Enter your email">
+      <button type="submit" class="btn btn-secondary"><span class="icon-paper-plane"></span></button>
+      </div>
+    </div>
+  </form>
+
+
+
+</body>
+</html>
